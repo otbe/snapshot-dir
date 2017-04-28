@@ -1,6 +1,6 @@
 {
   "name": "snapshot-dir",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Takes a snapshot of a folder",
   "main": "dist/index.js",
   "typings": "dist/src/index.d.ts",
@@ -20,7 +20,7 @@
     "folder",
     "hash"
   ],
- "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/otbe/emock.git"
   },
