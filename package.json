@@ -1,0 +1,49 @@
+{
+  "name": "snapshot-dir",
+  "version": "0.0.0",
+  "description": "Takes a snapshot of a folder",
+  "main": "dist/index.js",
+  "typings": "dist/src/index.d.ts",
+  "ws": {
+    "type": "node"
+  },
+  "scripts": {
+    "build": "yarn run ws -- b -p",
+    "test": "yarn run ws lint && yarn run ws unit",
+    "preversion": "yarn run test",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "test",
+    "snapshot",
+    "dir",
+    "folder",
+    "hash"
+  ],
+ "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otbe/emock.git"
+  },
+  "author": "Benjamin Otto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/otbe/emock/issues"
+  },
+  "homepage": "https://github.com/otbe/emock#readme",
+  "dependencies": {
+    "@types/deep-diff": "^0.0.30",
+    "@types/glob": "^5.0.30",
+    "@types/md5": "^2.1.32",
+    "@types/node": "^7.0.14",
+    "deep-diff": "^0.3.6",
+    "glob": "^7.1.1",
+    "md5": "^2.2.1"
+  },
+  "devDependencies": {
+    "@mercateo/ws": "^1.0.1-64",
+    "@types/expect": "^1.20.1",
+    "@types/mocha": "^2.2.41",
+    "expect": "^1.20.2",
+    "mocha": "^3.3.0"
+  }
+}
