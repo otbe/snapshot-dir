@@ -8,7 +8,7 @@
     "type": "node"
   },
   "scripts": {
-    "build": "yarn run ws -- b -p",
+    "build": "yarn run ws b",
     "test": "yarn run ws lint && yarn run ws unit",
     "preversion": "yarn run test",
     "postversion": "git push && git push --tags"
