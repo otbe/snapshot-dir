@@ -3,7 +3,7 @@
 
 Every now and then I need a little tool which takes a snapshot of a folder and compares it to an older one. Imagine we program a build/bundler tool which uses this technqiue to ensure 	integrity after changes to the core.
 
-*snapshot-dir* exports two functions to generate and compare snapshots.
+*snapshot-dir* exports four functions to generate and compare snapshots.
 
 ## API
 ### snapshot
@@ -22,4 +22,4 @@ Compares a given ```path``` with a given ```currentSnap``` and returns a [deep-d
 Same as ```snapshot``` but sync.
 
 ### snapshotCompareSync
-Same as ```snapshotCompareSync``` but sync.
+Same as ```snapshotCompare``` but sync.
