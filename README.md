@@ -17,3 +17,9 @@ Generates a snapshot from a given ```path```. The result is an object with filen
 snapshotCompare(path: string, currentSnap: SnapshotResult): Promise<IDiff>
 ```
 Compares a given ```path``` with a given ```currentSnap``` and returns a [deep-diff](https://www.npmjs.com/package/deep-diff#simple-examples) result object, which is undefined for no diff or a changeset.
+
+### snapshotSync
+Same as ```snapshot``` but sync.
+
+### snapshotCompareSync
+Same as ```snapshotCompareSync``` but sync.

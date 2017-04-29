@@ -22,14 +22,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/otbe/emock.git"
+    "url": "git+https://github.com/otbe/snapshot-dir.git"
   },
   "author": "Benjamin Otto",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/otbe/emock/issues"
+    "url": "https://github.com/otbe/snapshot-dir/issues"
   },
-  "homepage": "https://github.com/otbe/emock#readme",
+  "homepage": "https://github.com/otbe/snapshot-dir#readme",
   "dependencies": {
     "@types/deep-diff": "^0.0.30",
     "@types/glob": "^5.0.30",
