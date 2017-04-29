@@ -1,10 +1,6 @@
-import { listFiles, computeHash, listFilesSync, computeHashSync, createSnapshot } from './utils';
+import { listFiles, computeHash, listFilesSync, computeHashSync, createSnapshot, SnapshotResult } from './utils';
 import { join } from 'path';
 import { diff } from 'deep-diff';
-
-export interface SnapshotResult {
-  [key: string]: string;
-}
 
 export async function snapshot(path: string) {
   const files = await listFiles(path);

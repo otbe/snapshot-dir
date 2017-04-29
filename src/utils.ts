@@ -1,7 +1,10 @@
 import glob from 'glob';
 import { readFile, readFileSync } from 'fs';
 import md5 from 'md5';
-import { SnapshotResult } from './index';
+
+export interface SnapshotResult {
+  [key: string]: string;
+}
 
 export const listFiles = (cwd: string) => {
   return new Promise<string[]>((resolve, reject) => {

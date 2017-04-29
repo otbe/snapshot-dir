@@ -2,6 +2,8 @@ generated/
 .idea/
 build/
 node_modules/
+dist-tests/
+examples/
 typings/
 coverage/
 scripts/
